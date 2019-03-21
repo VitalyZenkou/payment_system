@@ -1,14 +1,5 @@
 CREATE DATABASE payment_system;
 
-CREATE TABLE address (
-  customer_id  int          NOT NULL,
-  city         varchar(50)  NOT NULL,
-  street       varchar(128) NOT NULL,
-  house_number int          NOT NULL,
-  flat_number  int,
-  FOREIGN KEY (customer_id) REFERENCES customer (id)
-);
-
 CREATE TABLE "user" (
   id               serial PRIMARY KEY,
   login            varchar(50)  NOT NULL UNIQUE,
@@ -16,6 +7,13 @@ CREATE TABLE "user" (
   name             varchar(50)  NOT NULL,
   surname          varchar(50)  NOT NULL,
   is_administrator boolean      NOT NULL DEFAULT false
+);
+
+CREATE TABLE customer (
+  id           serial PRIMARY KEY,
+  phone_number varchar(50),
+  user_id      smallint NOT NULL,
+  FOREIGN KEY (user_id) REFERENCES "user" (id)
 );
 
 CREATE TABLE credit_card (
@@ -30,11 +28,13 @@ CREATE TABLE credit_card (
   FOREIGN KEY (customer_id) REFERENCES customer (id)
 );
 
-CREATE TABLE customer (
-  id           serial PRIMARY KEY,
-  phone_number varchar(50),
-  user_id      smallint NOT NULL,
-  FOREIGN KEY (user_id) REFERENCES "user" (id)
+CREATE TABLE address (
+  customer_id  int          NOT NULL,
+  city         varchar(50)  NOT NULL,
+  street       varchar(128) NOT NULL,
+  house_number int          NOT NULL,
+  flat_number  int,
+  FOREIGN KEY (customer_id) REFERENCES customer (id)
 );
 
 CREATE TABLE payment (
