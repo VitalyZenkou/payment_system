@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    padding: 20px;
+}
+
+#form {
+    border: 1px solid grey;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+#t_form {
+    border: 1px solid grey;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+#pay_form {
+    border: 1px solid grey;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+#d_form {
+    border: 1px solid grey;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+#ud_form {
+    border: 1px solid grey;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+#c_form {
+    border: 1px solid grey;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+#uc_form {
+    border: 1px solid grey;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+#cr_form {
+    border: 1px solid grey;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+#b_form {
+    border: 1px solid grey;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+label, p {
+    display: inline-block;
+    margin-left: 20px;
+    margin-bottom: 7px;
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+    width: 100px;
+}
+
+p {
+    width: 250px;
+}
+
+p.card {
+    width: 500px;
+}
+
+p.customer {
+    display: inline-block;
+    width: 350px;
+    margin-left: 0;
+}
+
+#number {
+    position: relative;
+    top: -20px;
+}
+
+.menu, .picinput {
+    width: 150px;
+}
+
+.menu:invalid + span:after {
+    content: '\2718';
+    color: red;
+    margin-left: 7px;
+}
+
+.menu:valid + span:after {
+    content: '\2714';
+    color: green;
+    margin-left: 7px;
+}
+
+.button {
+    width: 100%;
+    text-align: center;
+    background: lightgrey;
+    border-radius: 5px;
+    padding: 10px 0;
+}
+
+.rbutton {
+    width: 100%;
+    text-align: center;
+    background: lightgrey;
+    border-radius: 10px;
+    padding: 10px 0;
+}
+
+.qwe {
+    border: 1px solid green;
+    width: 180px;
+    border-radius: 50px;
+    background: linear-gradient(to bottom, green, lightgreen, green);
+    line-height: 2em;
+    margin: 0;
+    font-weight: normal;
+}
+
+.qwr {
+    border: 1px solid darkred;
+    width: 180px;
+    border-radius: 50px;
+    background: linear-gradient(to bottom, red, lightcoral, red);
+    line-height: 2em;
+    margin: 0;
+    font-weight: normal;
+}
+
+#button {
+    display: none;
+}
+
+#rbutton {
+    display: none;
+}
+
+#t_button {
+    display: none;
+
+}
+
+#d_button {
+    display: none;
+}
+
+#b_button {
+    display: none;
+}
+
+#c_button {
+    display: none;
+}
+
+#pay_button {
+    display: none;
+}
+
+#cr_button {
+    display: none;
+}
+
+#cru_button {
+    display: none;
+}
+
+#ud_button {
+    display: none;
+}
+
+#form label:nth-of-type(10n) {
+    margin-bottom: 30px;
+}
+
+#t_form label:nth-of-type(10n) {
+    margin-bottom: 30px;
+}
+
+#d_form label:nth-of-type(10n) {
+    margin-bottom: 30px;
+}
+
+#b_form label:nth-of-type(10n) {
+    margin-bottom: 30px;
+}
+
+#c_form label:nth-of-type(10n) {
+    margin-bottom: 30px;
+}
+
+#cr_form label:nth-of-type(10n) {
+    margin-bottom: 30px;
+}
+
+#uc_form label:nth-of-type(10n) {
+    margin-bottom: 30px;
+}
+
+#ud_form label:nth-of-type(10n) {
+    margin-bottom: 30px;
+}
+
+#pay_form label:nth-of-type(10n) {
+    margin-bottom: 30px;
+}

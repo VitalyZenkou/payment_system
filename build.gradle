@@ -1,5 +1,7 @@
 plugins {
     id 'java'
+    id 'net.ltgt.apt' version '0.10'
+    id 'war'
 }
 
 group 'payment_system'
@@ -13,4 +15,11 @@ repositories {
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
+    providedCompile group: 'jstl', name: 'jstl', version: '1.2'
+    compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.4'
+    providedCompile group: 'javax.servlet', name: 'javax.servlet-api', version: '4.0.1'
+    providedCompile group: 'javax.servlet', name: 'jsp-api', version: '2.0'
+    apt 'org.projectlombok:lombok:1.18.4'
+//    compile group: 'postgresql', name: 'postgresql', version: '9.1-901-1.jdbc4'
+    compile group: 'org.postgresql', name: 'postgresql', version: '42.2.5'
 }
